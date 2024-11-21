@@ -6,7 +6,7 @@ API_TOKEN = '7543902606:AAGpHNUuVvrj1hC0Wb4U6BBsnLLMBYv3bbE'
 # Создаем объект бота
 bot = telebot.TeleBot(API_TOKEN)
 # Обработчик всех сообщений
-@bot.message_handler(func=lambda message: True)
+@bot.message_handler(func=lambda message: False)
 def handle_all_messages(message):
     bot.reply_to(message, 'Привет! И тебе всего хорошего!!!!')
 
